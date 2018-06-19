@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 .App {
   text-align: center;
 }
@@ -25,4 +27,85 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+}
+
+#wedfest-logo {
+    left: 40vw;
+    top: 8vh;
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: glow 3s ease infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        filter: blur(0px) brightness(1);
+    }
+    0% {
+        filter: blur(2px) brightness(1.5);
+    }
+}
+
+#names-header {
+    left: 35vw;
+    top: 28vh;
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.main-body {
+    top: 75vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+button.rsvp {
+    border: 2px white solid;
+    font-family: Raleway;
+    color: #fff;
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0);
+    transition: all 0.7s ease;
+    outline: 0;
+}
+button.rsvp:hover {
+
+    background-color: rgba(255,255,255,0.3);
+    animation: button-pulse 1s linear infinite alternate;
+}
+
+@keyframes button-pulse {
+    0% {
+        border: 2px white solid;
+    }
+    100% {
+        border: 2px rgba(255,255,255,0) solid;
+    }
+}
+
+.info-holder {
+    top: 100vh;
+    height: auto;
+    width: 80vw;
+    left: 10vw;
+    position: absolute;
+    font-family: Raleway;
+    color: #fff;
 }
