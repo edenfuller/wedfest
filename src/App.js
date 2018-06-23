@@ -7,6 +7,7 @@ import { ReserveNoCamping } from './ReserveNoCamping.js';
 
 import logo from './media/wedfest_logo.png';
 import names from './media/wedfest_names_header.png';
+import music from './media/music_header.png';
 import header from './media/trees_header.jpg';
 
 import './App.css';
@@ -42,7 +43,10 @@ class App extends Component {
                   <Route path='/vip' component={ReserveCamping} />
               </Router>
           </div>
-          <Info state={ this.state } />
+          <div className="body">
+              <Info state={ this.state } />
+              <div id="footer"><img src={music} className="music-footer" /></div>
+          </div>
       </div>
     );
   }

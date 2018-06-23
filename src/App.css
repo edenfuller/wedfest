@@ -78,6 +78,19 @@
     background-repeat: no-repeat;
 }
 
+#footer {
+    background-image: url('./media/trees_header.jpg');
+    background-position: center bottom;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.music-footer {
+    width: auto;
+    height: 40vh;
+}
+
 .main-body {
     top: 75vh;
     width: 100vw;
@@ -111,13 +124,42 @@ button.rsvp:hover {
         border: 2px rgba(255,255,255,0) solid;
     }
 }
-
-.info-holder {
-    top: 100vh;
-    height: auto;
-    width: 80vw;
-    left: 10vw;
+.body {
     position: absolute;
+        top: 100vh;
+}
+.info-holder {
+    height: auto;
+    width: 100vw;
+    left: 0;
     font-family: Raleway;
     color: #fff;
+}
+.info-bg {
+    padding: 15vh 15vw;
+}
+.info-bg h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.info-bg:nth-child(odd) {
+    text-align: left;
+    color: #321627;
+}
+.info-bg:nth-child(even) {
+    text-align: right;
+    background-color: #321627;
+}
+/* .info-bg:nth-child(3n) {
+    background-color: #778898;
+
+    color: #fff;
+}
+.info-bg:nth-child(4n) {
+    background-color: #1c453b;
+} */
+
+
+span.strong {
+    font-weight: 900;
 }
