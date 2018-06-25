@@ -12,7 +12,7 @@ export class Info extends Component {
         const sections = this.state.config.sections;
         for (let i = 0; i < sections.length; i += 1) {
             const header = <h2 className="info-header">{sections[i].title}</h2>;
-            const paragraph = <p className="info-body">{sections[i].body}</p>;
+            const paragraph = <div className="info-body">{sections[i].body}</div>;
             const holder = <div className="info-bg">{header}{paragraph}</div>
             body.push(holder);
         }

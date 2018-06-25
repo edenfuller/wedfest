@@ -1,5 +1,6 @@
 {
   "name": "wedfest",
+  "homepage": "http://wedfest.camp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

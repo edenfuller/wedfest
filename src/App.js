@@ -32,9 +32,10 @@ class App extends Component {
           {/* <iframe id="video-background" frameBorder="0" src="https://www.youtube.com/embed/xNN7iTA57jM?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1&modestbranding=1" allow="autoplay; encrypted-media; modest-branding" allowFullScreen>
           </iframe> */}
           <div id="photo-background" />
-
-          <img src={logo} id="wedfest-logo" alt="logo" />
-          <img src={names} id="names-header" alt="evan & amanda" />
+          <div className="title-holder">
+              <img src={logo} id="wedfest-logo" alt="logo" />
+              <img src={names} id="names-header" alt="evan & amanda" />
+          </div>
           <div className="main-body">
               <Router>
                   <Route path='/rsvp' component={ReserveNoCamping} />
@@ -45,7 +46,7 @@ class App extends Component {
           </div>
           <div className="body">
               <Info state={ this.state } />
-              <div id="footer"><img src={music} className="music-footer" /></div>
+              <div id="footer"><a href="https://open.spotify.com/user/123974088/playlist/19RxzTao0H7f25smwdvoYo?si=xcduNm0JQ0mvxk9zOs82zw"><img src={music} className="music-footer" /></a></div>
           </div>
       </div>
     );

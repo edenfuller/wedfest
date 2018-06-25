@@ -8,9 +8,11 @@ export class ReserveCamping extends Component {
 
     render() {
         return (
-            <a href="http://google.com"><button className="rsvp">
-                RSVP NOW
-            </button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEwHLJ6ITbKMwKXLZPG8SWRtZOp69_c4zsabn7vEg2AuH7EQ/viewform">
+                <button className="rsvp">
+                    RSVP NOW
+                </button>
+            </a>
         );
     }
 };
