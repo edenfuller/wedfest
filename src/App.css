@@ -163,6 +163,6 @@ button.rsvp:hover {
 } */
 
 
-span.strong {
+span.strong, p.strong, h3.strong {
     font-weight: 900;
 }
