@@ -2,8 +2,12 @@
 
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
+* {
 
+    overflow-x: hidden;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -174,6 +178,16 @@ button.rsvp:hover {
 .info-bg:nth-child(even) {
     text-align: right;
     background-color: #321627;
+}
+
+.info-bg:nth-child(odd) a {
+    font-weight: bold;
+    color: #321627;
+}
+
+.info-bg:nth-child(even) a {
+    font-weight: bold;
+    color: #fff;
 }
 /* .info-bg:nth-child(3n) {
     background-color: #778898;

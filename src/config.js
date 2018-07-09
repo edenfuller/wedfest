@@ -28,6 +28,25 @@ export const config = {
 
         },
         {
+            title: 'Registry',
+            id: 'registry',
+            body: [
+                <h3>If you'd like to give a gift for our wedding, here are some options!</h3>,
+                <ol>
+                    <li><p>Contribute to our honeymoon fund via cash or check</p></li>
+                    <li>Donate to one of the following nonprofits:
+                        <ul>
+                            <li><a href="https://www.facebook.com/WAGRescue/"><p>World Animal Guardians</p></a></li>
+                            <li><a href="https://www.youcaring.com/hosthome-892854"><p>HostHome</p></a></li>
+                            <li><a href="http://www.make-studio.org/how_to_help.html"><p>Make Studio</p></a></li>
+                            <li><a href="http://webelieveinmusic.com/"><p>Believe In Music</p></a></li>
+                        </ul>
+                    </li>
+                    <li><p>Choose a gift from our <a href="https://www.amazon.com/wedding/amanda-gosling-evan-fuller-white-hall-september-2018/registry/3R1VC8A1XK9KK">registry</a></p></li>
+                </ol>,
+            ]
+        },
+        {
             title: 'Hotels',
             id: 'hotels',
             body: [
