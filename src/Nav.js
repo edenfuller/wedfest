@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { config } from './config.js';
 
-export class Info extends Component {
+export class Nav extends Component {
     constructor( props ) {
         super( props );
         if(props && props.state) this.state = props.state;
@@ -11,13 +11,15 @@ export class Info extends Component {
         const body = [];
         const sections = this.state.config.sections;
         for (let i = 0; i < sections.length; i += 1) {
-            const header = <h2 className="info-header" id={sections[i].id}>{sections[i].title}</h2>;
-            const paragraph = <div className="info-body">{sections[i].body}</div>;
-            const holder = <div className="info-bg">{header}{paragraph}</div>
-            body.push(holder);
+            const anchor = '#' + sections[i].id;
+            const linkTitle = sections[i].title;
+            let linkSpacer = '';
+            if ( i < (sections.length - 1)) {linkSpacer += '   ◆ '};
+            const link = <a href={anchor}><p className="nav-item">{linkTitle}&nbsp;{linkSpacer}&nbsp;</p></a>;
+            body.push(link);
         }
         return (
-            <div className="info-holder">
+            <div id="nav">
                 { body }
             </div>
         );

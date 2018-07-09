@@ -44,7 +44,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     object-fit: cover;
 }
@@ -69,9 +69,9 @@
 }
 
 #names-header {
-    top: 28vh;
-    max-width: 55vmin;
-    max-height: 45vmin;
+    top: 38vh;
+    max-width: 50vmin;
+    max-height: 40vmin;
     height: auto;
     position: absolute;
     background-repeat: no-repeat;
@@ -79,6 +79,28 @@
 .title-holder {
     display: flex;
     justify-content: center;
+}
+
+
+#nav {
+    position: absolute;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    top: 30vmin;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    font-family: Raleway;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 #footer {
     background-image: url('./media/trees_header.jpg');
@@ -94,8 +116,8 @@
     padding: 10vh 0;
 }
 
-.main-body {
-    top: 75vh;
+.rsvp-holder {
+    top: 80vh;
     width: 100vw;
     position: absolute;
     display: flex;

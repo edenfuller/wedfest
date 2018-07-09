@@ -3,6 +3,7 @@ export const config = {
     sections: [
         {
             title: 'When & Where',
+            id: 'when-where',
             body: [
                 <p>The wedding ceremony and reception will be held on</p>,
                 <h3 className="strong" textAlign="center">Saturday, September 29th</h3>,
@@ -19,6 +20,7 @@ export const config = {
         },
         {
             title: 'Dress Code',
+            id: 'dress',
             body: [
                 <p>Cocktail attire. The ceremony area is about a quarter-mile walk from the parking lot via an unpaved path, so wear comfortable shoes!</p>,
                 <p>As the ceremony is outside, keep an eye on the weather and plan accordingly!</p>
@@ -27,6 +29,7 @@ export const config = {
         },
         {
             title: 'Hotels',
+            id: 'hotels',
             body: [
                 <p>The venue is located in a rural area. There are hotels a half-hour drive to the north in Pennsylvania, as well as a half-hour to the south in Maryland.</p>,
                 <a href="http://hamptoninn3.hilton.com/en/hotels/pennsylvania/hampton-inn-shrewsbury-SWYPAHX/index.html"><h3>Hampton Inn (Shrewsbury, PA)</h3></a>,

@@ -4,6 +4,7 @@ import { Info } from './Info.js';
 import { CampingInfo } from './CampingInfo.js';
 import { ReserveCamping } from './ReserveCamping.js';
 import { ReserveNoCamping } from './ReserveNoCamping.js';
+import { Nav } from './Nav.js';
 
 import logo from './media/wedfest_logo.png';
 import names from './media/wedfest_names_header.png';
@@ -34,9 +35,10 @@ class App extends Component {
           <div id="photo-background" />
           <div className="title-holder">
               <img src={logo} id="wedfest-logo" alt="logo" />
+              <Nav state={this.state}/>
               <img src={names} id="names-header" alt="evan & amanda" />
           </div>
-          <div className="main-body">
+          <div className="rsvp-holder">
               <Router>
                   <Route path='/rsvp' component={ReserveNoCamping} />
               </Router>
